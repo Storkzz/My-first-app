@@ -10,5 +10,21 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'first_webpage';
+  title = 'Stork is cool';
+
+  storkMode:string = "base mode";
+  
+  public onButtonClick(mode : string){
+    if(mode === "base mode"){
+      this.storkMode = "cool";
+    }
+     else if (mode ==="cool"){
+      this.storkMode ="mysterious";
+     } 
+    else{
+      this.storkMode = "base mode";
+    }
+
+    
+  }
 }

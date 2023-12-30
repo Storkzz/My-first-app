@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.grid-container {
+    display: grid;
+       grid-template-rows: repeat(4, 100px);
+       grid-auto-flow: column;
+   }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
