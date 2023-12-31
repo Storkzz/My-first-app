@@ -7,8 +7,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, SidebarModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'Stork is cool';
