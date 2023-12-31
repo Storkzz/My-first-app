@@ -33,7 +33,6 @@ export class AppComponent {
     else{
       this.storkMode = "base mode";
     }
-
-
   }
 }
+

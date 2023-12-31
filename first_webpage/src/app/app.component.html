@@ -1,9 +1,10 @@
-<div class="bg-gradient-to-b from-green-300 to-green-600">
-  <h1
-    class="w-screen h-12 bg-black pb-4 text-3xl text-green-300 text-center text-opacity-70 font bold"
-  >
-    Welcome to Storks website!
-  </h1>
+<body 
+class="w-auto h-auto bg-gradient-to-b from-green-300 to-green-600" >
+    <button (click)="onButtonClick(storkMode)" style="float: right" class="  bg-red-500 hover:bg-blue-700 text-white h-12 font-bold py-2 px-4 rounded-full">{{storkMode}}</button>
+  
+  <!--"#Why do i need to set Height here: h-12"-->
+<div>
+  <h1 class="w-auto h-12 bg-black pb-4 text-3xl text-green-300 text-center text-opacity-70 font bold"> Welcome to Storks website!</h1>
   <div class="flex">
     <div
       class="w-40 h-screen bg-slate-600"
@@ -37,6 +38,14 @@
         </div>
       </div>
     </div>
+  
+<p class="text-8xl font-bold underline decoration-blue-500 decoration-wavy decoration-5 underline-offset-8 note">a little note </p>
+<div class="wrapper" >
+  <div class="flex flex-col" style="float: right">
+    <h1 > A picture says a 1000 words</h1>
+    <img class="img-logs" src="assets/Allstar rank 1.png" alt="all stars healer, warcraftlogs">
+  </div>
+</div>
 
     <a
       (click)="onButtonClick(storkMode)"
