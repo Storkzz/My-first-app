@@ -1,27 +1,54 @@
-<body class="h-auto w-auto bg-gradient-to-b from-green-300 to-green-600" >
-<div>
-  <h1 class="w-screen h-12 bg-black pb-4 text-3xl text-green-300 text-center text-opacity-70 font bold"> Welcome to Storks website!</h1>
+<div class="bg-gradient-to-b from-green-300 to-green-600">
+  <h1
+    class="w-screen h-12 bg-black pb-4 text-3xl text-green-300 text-center text-opacity-70 font bold"
+  >
+    Welcome to Storks website!
+  </h1>
   <div class="flex">
-    <div class="w-40 h-screen bg-slate-600">
-    <div class="grid-container">
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 1</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 2</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 3</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 4</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 5</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 6</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 7</button></div>
-      <div class="grid-item h-12 p-3 rounded-full bg-sky-400"><button>item 8</button></div>
+    <div
+      class="w-40 h-screen bg-slate-600"
+      style="transition: all 1s"
+      [ngStyle]="{ width: sideBoxWidth }"
+    >
+      <div class="grid-container overflow-hidden whitespace-nowrap">
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 1</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 2</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 3</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 4</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 5</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 6</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 7</button>
+        </div>
+        <div class="grid-item h-12 p-3 rounded-full bg-sky-400">
+          <button>item 8</button>
+        </div>
       </div>
     </div>
-  
-  <button (click)="onButtonClick(storkMode)" class="bg-red-500 hover:bg-blue-700 text-white h-12 font-bold py-2 px-4 rounded-full">{{storkMode}}</button>
-                                                      <!--"#Why do i need to set Height here: h-12"-->
-  <p class="text-8xl font-bold underline decoration-blue-500 decoration-wavy decoration-5 underline-offset-8 note">a little note </p>
 
+    <a
+      (click)="onButtonClick(storkMode)"
+      class="bg-red-500 hover:bg-blue-700 text-white h-12 font-bold py-2 px-4 rounded-full"
+    >
+      {{ storkMode }}
+    </a>
+    <!--"#Why do i need to set Height here: h-12"-->
+    <p
+      class="text-8xl font-bold underline decoration-blue-500 decoration-wavy decoration-5 underline-offset-8 note"
+    >
+      a little note
+    </p>
+  </div>
 </div>
-
-</div>
-</body>
-  
-
