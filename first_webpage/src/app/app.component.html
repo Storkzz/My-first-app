@@ -1,8 +1,14 @@
-<body 
-class="w-auto h-auto bg-gradient-to-b from-green-300 to-green-600" >
-    <button (click)="onButtonClick(storkMode)" style="float: right" class="  bg-red-500 hover:bg-blue-700 text-white h-12 font-bold py-2 px-4 rounded-full">{{storkMode}}</button>
-  
-  <!--"#Why do i need to set Height here: h-12"-->
+<div class="bg-body flex flex-col h-screen">
+  <div class="h-28 bg-bar"></div>
+  <div class="flex flex-row grow">
+    <app-sidebar class="w-40 bg-bar"></app-sidebar>
+    <div class="grow"></div>
+  </div>
+</div>
+
+
+<!-- <body class="w-auto h-auto bg-gradient-to-b from-green-300 to-green-600" >
+
 <div>
   <h1 class="w-auto h-12 bg-black pb-4 text-3xl text-green-300 text-center text-opacity-70 font bold"> Welcome to Storks website!</h1>
   <div class="flex">
@@ -38,7 +44,7 @@ class="w-auto h-auto bg-gradient-to-b from-green-300 to-green-600" >
         </div>
       </div>
     </div>
-  
+
 <p class="text-8xl font-bold underline decoration-blue-500 decoration-wavy decoration-5 underline-offset-8 note">a little note </p>
 <div class="wrapper" >
   <div class="flex flex-col" style="float: right">
@@ -53,11 +59,10 @@ class="w-auto h-auto bg-gradient-to-b from-green-300 to-green-600" >
     >
       {{ storkMode }}
     </a>
-    <!--"#Why do i need to set Height here: h-12"-->
     <p
       class="text-8xl font-bold underline decoration-blue-500 decoration-wavy decoration-5 underline-offset-8 note"
     >
       a little note
     </p>
   </div>
-</div>
+</div> -->
