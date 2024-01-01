@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SidebarModule } from './sidebar/sidebar.module';
+import { TopbarModule } from './topbar/topbar.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SidebarModule],
+  imports: [CommonModule, RouterOutlet, SidebarModule, TopbarModule],
   templateUrl: './app.component.html'
 })
 export class AppComponent {
