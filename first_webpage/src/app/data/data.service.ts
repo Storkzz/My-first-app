@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PostModel } from '../models/PostModel';
 
 @Injectable()
-export class TopbarService {
+export class DataService {
   baseUrl: string = 'https://jsonplaceholder.typicode.com';
   private client: HttpClient;
 
@@ -10,7 +12,9 @@ export class TopbarService {
     this.client = client;
   }
 
-  ListAllPosts() {
-    return;
+  ListAllPosts(): Observable<PostModel[]> {
+    return this.client.get(`${this.baseUrl}/posts`).pipe((x) => {
+      return x as Observable<PostModel[]>;
+    });
   }
 }
